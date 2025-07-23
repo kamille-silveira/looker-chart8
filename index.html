@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gráfico Gantt - Evolução</title>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="chart.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #timeline {
+      margin-top: 40px;
+    }
+    .legenda {
+      display: flex;
+      gap: 40px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+    .item-legenda {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+    }
+    .cor {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+    }
+    .pedido { background-color: #1b4e69; }
+    .booking { background-color: #0097b2; }
+    .pmu { background-color: #9ebcd3; }
+    .partida { background-color: #38b6ff; }
+  </style>
+</head>
+<body>
+  <h2>Gráfico de Cronograma</h2>
+
+  <div id="timeline"></div>
+
+  <div class="legenda">
+    <div class="item-legenda"><div class="cor pedido"></div>Pedido → Booking</div>
+    <div class="item-legenda"><div class="cor booking"></div>Booking → PMU</div>
+    <div class="item-legenda"><div class="cor pmu"></div>PMU → Entrega</div>
+    <div class="item-legenda"><div class="cor partida"></div>Entrega → Partida</div>
+  </div>
+</body>
+</html>
