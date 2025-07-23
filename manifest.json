@@ -1,0 +1,13 @@
+{
+  "name": "Gantt Chart Evolução",
+  "organization": "Kamille Silveira",
+  "description": "Gráfico de Gantt com base no cronograma de entregas",
+  "modules": {
+    "visualization": {
+      "script": "chart.js",
+      "style": "style.css",
+      "layout": "index.html"
+    }
+  },
+  "components": ["viz"]
+}
