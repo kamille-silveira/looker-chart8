@@ -9,5 +9,7 @@
       "layout": "index.html"
     }
   },
-  "components": ["viz"]
+  "components": [
+    "viz"
+  ]
 }
